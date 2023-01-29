@@ -13,12 +13,12 @@ jobs:
     - uses: action/checkout@v3
     
     - name: Use Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       
     - run: npm i
     - run: gulp build
     
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v3
       with: 
         name: MyPackage
         path: dest

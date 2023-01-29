@@ -5,11 +5,11 @@ on:
 
 jobs:
   exercice1: 
-    runs-on: ubuntu-latest
-    container: 'node:current'
+    runs-on: ubuntu-latest$
+    
+    env: 
+      NAME: samuel
     
     steps:
-    - uses: Kaizhe/alpine-echo@v1.0.0
-      with: 
-        message: 'Hello world'
+    - run: echo hello ${{ env.NANE }}
       

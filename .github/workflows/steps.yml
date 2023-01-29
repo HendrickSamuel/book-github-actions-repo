@@ -11,5 +11,5 @@ jobs:
       NAME: samuel
     
     steps:
-    - run: echo "hello ${{ env.NANE }}"
+    - run: echo $NAME
       

@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/stale@v7.0.0
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         stale-issue-message: "Ce bug est fermé pour cause d'inactivité"
         
     

@@ -1,0 +1,15 @@
+name: steps exercice
+
+on: 
+  workflow_run:
+
+jobs:
+  exercice1: 
+    runs-on: ubuntu-latest
+    container: 'node:current'
+    
+    steps:
+    - uses: Kaizhe/alpine-echo@v1.0.0
+      with: 
+        message: 'Hello world'
+      
